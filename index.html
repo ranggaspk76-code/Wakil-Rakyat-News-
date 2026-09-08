@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLAY - Wajah Hukum Kota Palopo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-red: #ff4d4d;
+            --dark-bg: #0d0d0d;
+            --card-bg: #1a1a1a;
+            --text-gray: #b3b3b3;
+            --accent-gold: #c5a059;
+            --neon-blue: #00f2ff;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Hacked Header Effect */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80');
+            background-size: cover;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--primary-red);
+        }
+
+        .clay-logo {
+            font-size: 3.5rem;
+            font-weight: 900;
+            letter-spacing: 10px;
+            color: #fff;
+            text-transform: uppercase;
+            text-shadow: 2px 2px var(--primary-red), -2px -2px var(--neon-blue);
+            margin: 0;
+        }
+
+        .status-bar {
+            background: var(--primary-red);
+            color: black;
+            padding: 5px 0;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Article Styling */
+        .article-box {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 5px;
+            border-left: 5px solid var(--primary-red);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1.title {
+            color: var(--primary-red);
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        .meta-info {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .content {
+            font-size: 1.1rem;
+            white-space: pre-line; /* Menjaga format tulisan asli */
+        }
+
+        .author-tag {
+            background: #333;
+            padding: 10px 20px;
+            display: inline-block;
+            margin-top: 30px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        /* Profile Section */
+        .palopo-profile {
+            margin-top: 60px;
+            padding: 30px;
+            background: #111;
+            border: 1px solid #333;
+        }
+
+        .palopo-profile h2 {
+            color: var(--accent-gold);
+            border-bottom: 2px solid var(--accent-gold);
+            display: inline-block;
+        }
+
+        /* Grid Links */
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .link-card {
+            background: #222;
+            padding: 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #ddd;
+            transition: 0.3s;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .link-card:hover {
+            background: var(--primary-red);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* CTA Buttons */
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        .btn-wa { background-color: #25d366; color: white; }
+        .btn-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; }
+        .btn-yt { background-color: #ff0000; color: white; }
+
+        .btn:hover { opacity: 0.9; transform: scale(1.05); }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-gray);
+            font-size: 0.8rem;
+            background: #000;
+        }
+
+        .hashtag { color: var(--neon-blue); margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="status-bar">
+        <marquee scrollamount="5">CRITICAL UPDATE: Penegakan Hukum Palopo Dipertanyakan - Transparansi Korupsi Menjadi Sorotan Rakyat - CLAY EXCLUSIVE REPORT</marquee>
+    </div>
+
+    <header>
+        <h1 class="clay-logo">CLAY</h1>
+        <p>Integritas & Investigasi Tanpa Batas</p>
+    </header>
+
+    <div class="container">
+        <!-- Artikel Utama -->
+        <article class="article-box">
+            <div class="meta-info">
+                <span><i class="fas fa-calendar"></i> September 2026</span>
+                <span><i class="fas fa-user"></i> Wismoyo Tja</span>
+                <span><i class="fas fa-map-marker-alt"></i> Palopo, Sulsel</span>
+            </div>
+
+            <h1 class="title">Wajah Hukum Kota Palopo, Penegakan Hukum Penakut Sebab Membiarkan Kejahatan Koruptor Dan Tidak Bertindak Kepada Yang Bersalah.</h1>
+            
+            <div class="content">
+                Korupsi Kota Palopo di gambarkan Media Tv, Mainstream dan Cetak di ketahui terang-terangan pula oleh rakyat. Semua line terasuki. Bahkan korupsi Kota yang katanya Palopo Baru ini, bagaikan penyakit, bila kita analogikan sosok Kejari Sinyo Redy Benny Ratag Terkena Kanker Biasa, Tapi Kanker Ganas Atau Penyakit Leukimia (Kanker Darah).
+
+                Coba lihat Kejaksaan Negeri Palopo di mana kasus korupsi pada tanggal 27 Juni tahun 2026 menurut sumber terpercaya di beritakan oleh Wartawan media www.pamornews.com, yaitu Kanal Akhmad Baso menduga keterlibatan anggota DPRD berpartai politik “WARNA BIRU”. Menariknya ditanggal 14 Agustus tahun 2026 terundus kabar seorang anggota DPRD berinisial “C” ikut diperiksa oleh Kejaksaan Negeri Palopo terkait korupsi proyek lapangan sepak bola gaspa Kota Palopo.
+
+                Kalimat sangat layak untuk saya kutip sebagai bentuk pesan bagi kekuasaan dan penegakan hukum kota palopo, kalimat politisi DPP Partai Demokrat yakni Agus Yudhoyono: Ingatkan Setiap Warga Negara Sama di Mata Hukum. (5/9/2026) di beritakan oleh media www.beritanasional.com.
+
+                Peristiwa korupsi di atas meja kini justru bukan saja merampok di atas meja, tapi uang hasil rampok, meja sama kursi ikut diangkat dibawa lari keluar dan terkesan didiami ataukah betul kejaksaan kesulitan lakukan penyelidikan ketiga kasus korupsi libatkan anggota Dprd Palopo.
+
+                Warga Palopo teriak menegakkan keadilan dan kebenaran bagaikan berjalan dijembatan ‘sirotol mustaqim’ diatas rambut dibelah tujuh (7), salah melangkah, apakah pidana hukuman menanti namun pada titik jenuh ketika rakyat mulai bersuara dan ‘melawan’ maka tidak saja berimbas kepada ‘oknum penegak hukum’ tapi Pemerintahan Hjnaili Trisal-Akhmad Syarifuddin Daud ikut terancam seperti kata pepatah ‘jangan karena nila setitik rusak susu sebelanga’.
+
+                Oleh sebab inilah: Saya meminta fungsi pengawasan Komisi 3 DPR RI politisi Partai Gerakan Indonesia Raya (Gerindra) Habiburokhman dan politisi Partai Nasdem Ahmad sahroni agar menegur Kejari Palopo, Sinyo Redy Benny Ratag supaya transparan ke publik dalam menindak kasus korupsi ini, terkesan diulur-ulur potensi terjadi transaksi black-market kendatipun baik buruknya hukum Sulsel, Kota Palopo tergantung fungsi pengawasan komisi 3 Dewan Perwakilan Rakyat Republik Indonesia.
+
+                <div class="author-tag">(Penulis: Wismoyo Tja)</div>
+                
+                <div style="margin-top: 20px;">
+                    <span class="hashtag">#sorotan</span>
+                    <span class="hashtag">#pengikut</span>
+                    <span class="hashtag">#beritaterkini</span>
+                    <span class="hashtag">#koalisiindonesiamaju</span>
+                    <span class="hashtag">#SEMUAORANG🇮🇩🐘94🤎</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Profil Kota Palopo -->
+        <section class="palopo-profile">
+            <h2>Profil Kota Palopo, Sulawesi Selatan</h2>
+            <p><strong>Kota Palopo</strong> (dahulu merupakan ibukota Kabupaten Luwu) adalah sebuah kota di Provinsi Sulawesi Selatan yang secara historis merupakan pusat Kerajaan Luwu. Dikenal dengan julukan <em>"Kota Idaman"</em>, Palopo saat ini sedang bertransformasi menjadi pusat perdagangan dan pendidikan di wilayah Luwu Raya.</p>
+            <ul>
+                <li><strong>Letak Geografis:</strong> Pesisir Teluk Bone.</li>
+                <li><strong>Visi:</strong> Mewujudkan Palopo sebagai Kota Maju dan Berkelanjutan.</li>
+                <li><strong>Sektor Utama:</strong> Jasa, Perdagangan, Pertanian, dan Perikanan.</li>
+            </ul>
+        </section>
+
+        <!-- Kontak & Media Sosial -->
+        <div class="btn-group">
+            <a href="https://wa.me/6288246538924" class="btn btn-wa">
+                <i class="fab fa-whatsapp"></i> Pesan ke SAHAR
+            </a>
+            <a href="https://www.instagram.com/_adhystar?stkn=MTZteG1zOHUzbXBweg==" class="btn btn-ig">
+                <i class="fab fa-instagram"></i> Instagram ADHYSTAR
+            </a>
+            <a href="https://www.youtube.com/@adhystarr" class="btn btn-yt">
+                <i class="fab fa-youtube"></i> YouTube ADHYSTAR
+            </a>
+        </div>
+
+        <h3 style="margin-top: 50px; color: var(--accent-gold);">SUMBER & REFERENSI TERKAIT:</h3>
+        <div class="link-grid">
+            <a href="https://www.instagram.com/kejari.luwu?stkn=MW9vajJkbW5jZ3VnOQ==" class="link-card" target="_blank">
+                <i class="fab fa-instagram"></i> Akun Resmi KEJARI LUWU
+            </a>
+            <a href="https://share.google/tCFhUwLJQqnWRekuC" class="link-card" target="_blank">Sumber: Golkarpedia</a>
+            <a href="https://share.google/GARGGJCp0blWrOBVq" class="link-card" target="_blank">Sumber: Partai NasDem</a>
+            <a href="https://share.google/wrFLkilgEPts5VHGD" class="link-card" target="_blank">Fraksi Partai Golkar</a>
+            <a href="https://share.google/63Ab3GsMx45Acrs5i" class="link-card" target="_blank">Sumber: Partai Demokrat</a>
+            <a href="https://share.google/1qVirsrmXEEYlBcUs" class="link-card" target="_blank">Partai Solidaritas Indonesia</a>
+            <a href="https://share.google/AU9bWJxFqdoSARqEq" class="link-card" target="_blank">Sumber: PWI</a>
+            <a href="https://share.google/rR099bwh4JrM2P9Hz" class="link-card" target="_blank">Galeri PSI Sulsel</a>
+            <a href="https://share.google/PEGQz1V0Aus8c91hw" class="link-card" target="_blank">Partai Gelora Indonesia</a>
+            <a href="https://share.google/vXGBHPbAe8gQNyQLC" class="link-card" target="_blank">Sumber: PKS</a>
+            <a href="https://share.google/TOgxsR5JTokDq1Ocv" class="link-card" target="_blank">Sumber: PAN</a>
+            <a href="https://share.google/YhjBMhMJxWE4WRXUI" class="link-card" target="_blank">DPD Golkar</a>
+            <a href="https://share.google/XiDE324FudcPozRnf" class="link-card" target="_blank">DPP Partai Golkar</a>
+            <a href="https://share.google/K7ghsjWnMGESOpJXd" class="link-card" target="_blank">Kantor Staf Presiden</a>
+            <a href="https://share.google/UXZ9MPaTHgI0fGtiI" class="link-card" target="_blank">DPD Golkar Luwu</a>
+            <a href="https://suaraluwuraya.netlify.app/" class="link-card" target="_blank">Provinsi Luwu Raya</a>
+            <a href="https://share.google/FMGwSybDYs1ARXNOV" class="link-card" target="_blank">Sekretariat Kedatuan Luwu</a>
+            <a href="https://share.google/3gXnjwvu1pGCxSHPq" class="link-card" target="_blank">KSP Republik Indonesia</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CLAY NETWORK - Diterbitkan Secara Independen</p>
+        <p><em>"Menegakkan Keadilan Di Atas Garis Kebenaran"</em></p>
+    </footer>
+
+</body>
+</html>
